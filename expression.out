@@ -1,0 +1,5 @@
+T'->e|*FT'|/FT'
+E'->e|+TE'|-TE'
+E->TE'
+T->FT'
+F->(E)|id

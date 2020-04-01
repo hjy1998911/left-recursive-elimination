@@ -17,13 +17,13 @@ E->E+T|E-T|T
 T->T*F|T/F|F
 F->(E)|id
 ```
-Eliminating the left recursive productions as follows
+Eliminating the left recursive productions as follows, where e denoting the epsilon
 
 ```
-T'->e|*FT'|/FT'
-E'->e|+TE'|-TE'
 E->TE'
+E'->+TE'|-TE'|e
 T->FT'
+T'->*FT'|/FT'|e
 F->(E)|id
 ```
 
